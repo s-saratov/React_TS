@@ -1,6 +1,7 @@
 import './App.css'
 
 // === Lessons ===
+import Lesson06 from './lessons/Lesson_06/Lesson06'
 
 // === Homeworks ===
 
@@ -10,7 +11,8 @@ function App() {
 
   return (
     <div className='app'>
-      Hello TS
+      {/* Topic: TypeScript - Introduction */}
+      <Lesson06 />
     </div>
   )
 }
