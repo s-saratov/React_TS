@@ -8,7 +8,7 @@ let age: number = 25;
 
 let name: string = "Alice";
 
-let isActive: boolean = true; 
+let isActive: boolean = true;
 
 let nullableValue: string | null = null; // Строка или null
 
