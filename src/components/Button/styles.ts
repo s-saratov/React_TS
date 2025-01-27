@@ -1,4 +1,6 @@
-.main-button {
+import styled from "@emotion/styled";
+
+export const MainButton = styled.button`
   width: 100%;
   min-height: 70px;
   background: #1f27f5;
@@ -11,14 +13,4 @@
   font-weight: 600;
   font-size: 20px;
   cursor: pointer;
-}
-
-/* .main-button {
-  width: 300px;
-  padding: 20px 30px;
-  background-color: rgb(54, 153, 153);
-  border: none;
-  border-radius: 4px;
-  font-size: 28px;
-  color: rgb(46, 66, 66);
-} */
+`
