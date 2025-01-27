@@ -31,7 +31,7 @@ function Lesson08() {
       <BoxInfo>
         <ContentContainer>
           <Image src={Example2} />
-          <Text>Emotion example 1</Text>
+          <Text>Emotion example 2</Text>
         </ContentContainer>
       </BoxInfo>
     </div>

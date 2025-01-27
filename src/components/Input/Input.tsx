@@ -10,6 +10,7 @@ function Input({ name, type = "text", placeholder, label, id }: InputProps) {
         id={id}
         type={type}
         placeholder={placeholder}
+        className="input-element"
       />
     </div>
   );

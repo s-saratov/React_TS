@@ -1,5 +1,5 @@
-import "./styles.css";
 import { ButtonProps } from "./types"
+import { MainButton } from "./styles";
 
 // interface ButtonProps {
 //   name?: string;
@@ -9,9 +9,9 @@ import { ButtonProps } from "./types"
 
 function Button({ name = "SEND", type, onClick }: ButtonProps) {
   return (
-    <button className="main-button" type={type} onClick={onClick}>
+    <MainButton type={type} onClick={onClick}>
       {name}
-    </button>
+    </MainButton>
   );
 }
 
