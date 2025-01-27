@@ -1,22 +1,26 @@
-import './App.css'
+import GlobalStyles from "./styles/GlobalStyles";
 
 // === Lessons ===
 // import Lesson06 from './lessons/Lesson_06/Lesson06'
-import Lesson07 from './lessons/Lesson_07/Lesson07'
+// import Lesson07 from "./lessons/Lesson_07/Lesson07";
+import Lesson08 from "./lessons/Lesson_08/Lesson08";
 
 // === Homeworks ===
 
 // === Consultations ===
 
 function App() {
-
   return (
-    <div className='app'>
+    <>
+      <GlobalStyles />
       {/* Topic: TypeScript - Introduction */}
       {/* <Lesson06 /> */}
-      <Lesson07 />
-    </div>
-  )
+      {/* Topic: TypeScript - Object  types, enum*/}
+      {/* <Lesson07 /> */}
+      {/* Topic: Styling components */}
+      <Lesson08 />
+    </>
+  );
 }
 
-export default App
+export default App;
