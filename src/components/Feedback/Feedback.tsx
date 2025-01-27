@@ -3,8 +3,8 @@ import Button from "../Button/Button";
 import "./styles.css";
 
 function Feedback() {
-    const [likes, setLikes] = useState(0);
-    const [dislikes, setDislikes] = useState(0);
+    const [likes, setLikes] = useState<number>(0);
+    const [dislikes, setDislikes] = useState<number>(0);
     
   const likeClick = (): void => {
     setLikes((prevValue) => prevValue + 1);

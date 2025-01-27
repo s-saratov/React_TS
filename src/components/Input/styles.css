@@ -33,7 +33,7 @@ input::placeholder {
 
   opacity: 40%;
 }
-.input-wrapper {
+.input-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

@@ -1,8 +1,8 @@
-import React from 'react';
+import { ReactNode } from "react";
 
 export interface AnimalCardProps {
     animalName: string;
-    animalSpecies: number;
+    animalSpecies: string;
     animalImg?: string;
-    children?: React.ReactNode;
+    children?: ReactNode;
   }
