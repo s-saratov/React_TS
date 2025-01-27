@@ -1,5 +1,5 @@
 import "./styles.css";
-import { ButtonProps } from "./types"
+import { ButtonProps } "./types"
 
 // interface ButtonProps {
 //   name?: string;
