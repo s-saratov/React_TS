@@ -1,17 +1,6 @@
-input,
-label {
-  width: 100%;
-}
+import styled from "@emotion/styled";
 
-label {
-  color: rgba(111, 111, 111, 1);
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-}
-
-.input-container {
+export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -19,10 +8,9 @@ label {
   gap: 4px;
   width: 470px;
   height: 78px;
-}
+`;
 
-
-.input-element {
+export const InputElement = styled.input`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,18 +18,12 @@ label {
   gap: 10px;
   width: 100%;
   height: 50px;
-  background: #FFFFFF;
-  border: 1px solid #3F3F3F;
+  background: #ffffff;
+  border: 1px solid #3f3f3f;
   border-radius: 4px;
   color: rgba(111, 111, 111, 1);
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-}
-
-
-input::placeholder {
-
-  opacity: 40%;
-}
+`;

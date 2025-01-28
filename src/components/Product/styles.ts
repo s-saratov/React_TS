@@ -1,4 +1,6 @@
-.product-card-wrapper {
+import styled from "@emotion/styled";
+
+export const ProductCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,8 +13,8 @@
   border: 2px solid rgb(21, 93, 102);
   border-radius: 6px;
   font-size: 22px;
-}
+`;
 
-.product-img {
+export const ProductImage = styled.img`
   width: 150px;
-}
+`;

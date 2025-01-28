@@ -14,7 +14,13 @@ export const MainButton = styled.button`
   font-weight: 600;
   font-size: 20px;
   cursor: pointer;
-`
+
+  &:disabled {
+    background-color: #7d7d80;
+    color: rgb(166, 163, 163);
+    cursor: default;
+  }
+`;
 
 // .main-button {
 //   width: 100%;

@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
-import "./styles.css";
 import { useState } from "react";
+import { ButtonWrapper, CounterWrapper, ResultContainer } from "./styles";
 
 function Counter() {
   const [counter, setCounter] = useState<number>(0);
@@ -9,22 +9,22 @@ function Counter() {
     setCounter((prevState) => prevState + 1);
   };
 
-  console.log("counter os Counter Component", counter);
+  console.log("counter in Counter Component", counter);
 
   const onMinusClick = (): void => {
     setCounter((prevValue) => prevValue - 1);
   };
 
   return (
-    <div className="counter-wrapper">
-      <div className="button-wrapper">
+    <CounterWrapper>
+      <ButtonWrapper>
         <Button name="-" type="button" onClick={onMinusClick} />
-      </div>
-      <div className="result-container">{counter}</div>
-      <div className="button-wrapper">
+      </ButtonWrapper>
+      <ResultContainer>{counter}</ResultContainer>
+      <ButtonWrapper>
         <Button name="+" type="button" onClick={onPlusClick} />
-      </div>
-    </div>
+      </ButtonWrapper>
+    </CounterWrapper>
   );
 }
 
