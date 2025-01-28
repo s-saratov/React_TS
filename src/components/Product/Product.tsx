@@ -1,11 +1,11 @@
-import { ProductCardWrapper, ProductImage } from "./styles";
+import { ProductCardWrapper, ProductImage, ProductName } from "./styles";
 import { ProductProps } from "./types";
 
 function Product({ productName = "Unknown", productPrice, productImg }: ProductProps) {
   return (
     <ProductCardWrapper>
       {productImg !== undefined && <ProductImage src={productImg} alt="Product image" />}
-      <h3>{productName}</h3>
+      <ProductName>{productName}</ProductName>
       {productPrice !== undefined && <div>Price: {productPrice} Euro</div>}
     </ProductCardWrapper>
   );

@@ -15,6 +15,8 @@ export const ProductCardWrapper = styled.div`
   font-size: 22px;
 `;
 
+export const ProductName = styled.h3``;
+
 export const ProductImage = styled.img`
   width: 150px;
 `;
