@@ -1,18 +1,12 @@
-import "./styles.css";
+import { InputContainer, InputElement, Label } from "./styles";
 import { InputProps } from "./types";
 
 function Input({ name, type = "text", placeholder, label, id }: InputProps) {
   return (
-    <div className="input-container">
-      {label && <label htmlFor={id}>{label}</label>}
-      <input
-        name={name}
-        id={id}
-        type={type}
-        placeholder={placeholder}
-        className="input-element"
-      />
-    </div>
+    <InputContainer>
+      {label && <Label htmlFor={id}>{label}</Label>}
+      <InputElement name={name} id={id} type={type} placeholder={placeholder} />
+    </InputContainer>
   );
 }
 

@@ -3,9 +3,10 @@ import GlobalStyles from "./styles/GlobalStyles";
 // === Lessons ===
 // import Lesson06 from './lessons/Lesson_06/Lesson06'
 // import Lesson07 from "./lessons/Lesson_07/Lesson07";
-import Lesson08 from "./lessons/Lesson_08/Lesson08";
+// import Lesson08 from "./lessons/Lesson_08/Lesson08";
 
 // === Homeworks ===
+import Homework08 from "./homeworks/Homework_08/Homework08";
 
 // === Consultations ===
 
@@ -18,7 +19,8 @@ function App() {
       {/* Topic: TypeScript - Object  types, enum*/}
       {/* <Lesson07 /> */}
       {/* Topic: Styling components */}
-      <Lesson08 />
+      {/* <Lesson08 /> */}
+      <Homework08 />
     </>
   );
 }

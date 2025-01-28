@@ -7,9 +7,9 @@ import { MainButton } from "./styles";
 //   onClick: () => void;
 // }
 
-function Button({ name = "SEND", type, onClick }: ButtonProps) {
+function Button({ name = "SEND", type, isDisabled = false, onClick }: ButtonProps) {
   return (
-    <MainButton type={type} onClick={onClick}>
+    <MainButton type={type} disabled={isDisabled} onClick={onClick}>
       {name}
     </MainButton>
   );

@@ -1,11 +1,17 @@
 import { useState } from "react";
 import Button from "../Button/Button";
-import "./styles.css";
+import {
+  ButtonWrapper,
+  FeedbackWrapper,
+  LikeDislikeWrapper,
+  LikesContainer,
+  ResetWrapper,
+} from "./styles";
 
 function Feedback() {
-    const [likes, setLikes] = useState<number>(0);
-    const [dislikes, setDislikes] = useState<number>(0);
-    
+  const [likes, setLikes] = useState<number>(0);
+  const [dislikes, setDislikes] = useState<number>(0);
+
   const likeClick = (): void => {
     setLikes((prevValue) => prevValue + 1);
   };
@@ -20,21 +26,21 @@ function Feedback() {
   };
 
   return (
-    <div className="feedback-wrapper">
-      <div className="like-dislike-wrapper">
-        <div className="likes-container">{likes}</div>
-        <div className="button-wrapper">
+    <FeedbackWrapper>
+      <LikeDislikeWrapper>
+        <LikesContainer>{likes}</LikesContainer>
+        <ButtonWrapper>
           <Button name="Like" type="button" onClick={likeClick} />
-        </div>
-        <div className="button-wrapper">
+        </ButtonWrapper>
+        <ButtonWrapper>
           <Button name="Dislike" type="button" onClick={dislikeClick} />
-        </div>
-        <div className="likes-container">{dislikes}</div>
-      </div>
-      <div className="reset-wrapper">
-          <Button name="Reset Results" type="button" onClick={resetClick} />
-        </div>
-    </div>
+        </ButtonWrapper>
+        <LikesContainer>{dislikes}</LikesContainer>
+      </LikeDislikeWrapper>
+      <ResetWrapper>
+        <Button name="Reset Results" type="button" onClick={resetClick} />
+      </ResetWrapper>
+    </FeedbackWrapper>
   );
 }
 
