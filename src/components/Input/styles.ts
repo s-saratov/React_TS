@@ -6,7 +6,7 @@ export const InputContainer = styled.div`
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
-  width: 470px;
+  width: 100%;
   height: 78px;
 `;
 
