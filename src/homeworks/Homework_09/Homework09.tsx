@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { v4 } from "uuid";
 
 import Input from "../../components/Input/Input";
@@ -14,14 +14,17 @@ import {
   NameBlock,
   MessageBlock,
 } from "./styles";
+import { Message } from "./types";
 
 function Homework09() {
-  // Получаем значения из полей ввода
-  const [userNameValue, setUserNameValue] = useState<string>("");
-  const [messageValue, setMessageValue] = useState<string>("");
-  const [isButtonDisabled, setButtonDisabled] = useState(true);
+
+  // Задаём необходимые состояния
+  const [userNameValue, setUserNameValue] = useState<string>("");         // значение из поля ввода имени
+  const [messageValue, setMessageValue] = useState<string>("");           // значение из поля ввода сообщения
+  const [messages, setMessages] = useState<Message[]>([]);                // массив для хранения собщений
 
   // Создаём функции, принимающие значения, введённые пользователем
+
   const onChangeName = (event: ChangeEvent<HTMLInputElement>) => {
     setUserNameValue(event.target.value);
   };
@@ -30,24 +33,7 @@ function Homework09() {
     setMessageValue(event.target.value);
   };
 
-  // Обновляем состояние кнопки при изменении значений в полях
-  useEffect(() => {
-    setButtonDisabled(
-      userNameValue.trim() === "" || messageValue.trim() === ""
-    );
-  }, [userNameValue, messageValue]);
-
-  // Создаём интерфейс для хранения данных
-  interface Message {
-    dateTime: string;
-    name: string;
-    message: string;
-  }
-
-  // Создаём массив для хранения сообщений
-  const [messages, setMessages] = useState<Message[]>([]);
-
-  // Создаём добавления экземпляров интерфейса Message в массив
+  // Создаём функцию добавления экземпляров интерфейса Message в массив
 
   const addMessage = (newName: string, newMessage: string) => {
     const newMessageItem: Message = {
@@ -57,7 +43,6 @@ function Homework09() {
     };
 
     setMessages([...messages, newMessageItem]);
-    console.log(messages);
     setMessageValue("");
   };
 
@@ -96,7 +81,7 @@ function Homework09() {
           <Button
             name="Post"
             type="button"
-            isDisabled={isButtonDisabled}
+            isDisabled={!userNameValue.trim()|| !messageValue.trim()}
             onClick={() => addMessage(userNameValue, messageValue)}
           />
         </ButtonWrapper>

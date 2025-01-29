@@ -18,7 +18,7 @@ export const FormContainer = styled.div`
   min-height: 300px;
   gap: 20px;
   padding: 20px;
-  border: 1px solid #3f3f3f;
+  border: 2px solid #3f3f3f;
   border-radius: 4px;
   width: 33%;
 `;
@@ -34,7 +34,7 @@ export const MessagesContainer = styled.div`
   justify-content: flex-start;
   gap: 20px;
   padding: 20px;
-  border: 1px solid #3f3f3f;
+  border: 2px solid #3f3f3f;
   border-radius: 4px;
   width: 66%;
   min-height: 100%;
