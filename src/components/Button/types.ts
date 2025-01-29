@@ -1,7 +1,7 @@
 export interface ButtonProps {
     name?: string;
-    type: "submit" | "button" | "reset";
+    type?: "submit" | "button" | "reset";
     isDisabled?: boolean;
-    onClick: () => void;
+    onClick?: () => void;
     minHeight?: string;
   }

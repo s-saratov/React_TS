@@ -5,10 +5,11 @@ import GlobalStyles from "./styles/GlobalStyles";
 // import Lesson07 from "./lessons/Lesson_07/Lesson07";
 // import Lesson08 from "./lessons/Lesson_08/Lesson08";
 // import Lesson09 from "./lessons/Lesson_09/Lesson09";
+import Lesson10 from "./lessons/Lesson_10/Lesson10";
 
 // === Homeworks ===
 // import Homework08 from "./homeworks/Homework_08/Homework08";
-import Homework09 from "./homeworks/Homework_09/Homework09";
+// import Homework09 from "./homeworks/Homework_09/Homework09";
 
 // === Consultations ===
 
@@ -25,7 +26,9 @@ function App() {
       {/* <Homework08 /> */}
       {/* Topic: Control components, useEffect */}
       {/* <Lesson09 /> */}
-      <Homework09 />
+      {/* <Homework09 /> */}
+      {/* Topic: useEffect, axios */}
+      <Lesson10 />
 
     </>
   );
