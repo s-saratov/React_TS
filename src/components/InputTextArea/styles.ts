@@ -9,11 +9,12 @@ export const InputContainer = styled.div`
   width: 100%;
 `;
 
-export const InputElement = styled.input`
+export const InputElement = styled.textarea<{ rows?: number }>`
   padding: 12px;
   gap: 10px;
   width: 100%;
-  height: 50px;
+  min-height: ${(props) => props.rows ? `${props.rows * 24}px` : "48px"};
+  resize: none;
   background: #ffffff;
   border: 1px solid #3f3f3f;
   border-radius: 4px;

@@ -4,10 +4,11 @@ import GlobalStyles from "./styles/GlobalStyles";
 // import Lesson06 from './lessons/Lesson_06/Lesson06'
 // import Lesson07 from "./lessons/Lesson_07/Lesson07";
 // import Lesson08 from "./lessons/Lesson_08/Lesson08";
-import Lesson09 from "./lessons/Lesson_09/Lesson09";
+// import Lesson09 from "./lessons/Lesson_09/Lesson09";
 
 // === Homeworks ===
 // import Homework08 from "./homeworks/Homework_08/Homework08";
+import Homework09 from "./homeworks/Homework_09/Homework09";
 
 // === Consultations ===
 
@@ -23,7 +24,8 @@ function App() {
       {/* <Lesson08 /> */}
       {/* <Homework08 /> */}
       {/* Topic: Control components, useEffect */}
-      <Lesson09 />
+      {/* <Lesson09 /> */}
+      <Homework09 />
 
     </>
   );
