@@ -41,7 +41,7 @@ function Homework10() {
       setIsLoading(true);
       const result = await axios.get(PICTURE_URL);
       const data = result.data;
-      setPicture(`${data.message}`);
+      setPicture(data.message);
     } catch (error: any) {
       setError(error.message);
     } finally {
@@ -66,7 +66,7 @@ function Homework10() {
         <Input
           name="picture_fetcher"
           id="picture_fetcher"
-          placeholder="Type here anything to download new picture"
+          placeholder="Type here anything to download a new picture"
           value={fetcherValue}
           onChange={onChangeFetcher}
         />
