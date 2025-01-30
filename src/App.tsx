@@ -6,11 +6,12 @@ import GlobalStyles from "./styles/GlobalStyles";
 // import Lesson08 from "./lessons/Lesson_08/Lesson08";
 // import Lesson09 from "./lessons/Lesson_09/Lesson09";
 // import Lesson10 from "./lessons/Lesson_10/Lesson10";
+import Lesson11 from "./lessons/Lesson_11/Lesson_11";
 
 // === Homeworks ===
 // import Homework08 from "./homeworks/Homework_08/Homework08";
 // import Homework09 from "./homeworks/Homework_09/Homework09";
-import Homework10 from "./homeworks/Homework_10/Homework10";
+// import Homework10 from "./homeworks/Homework_10/Homework10";
 
 // === Consultations ===
 
@@ -30,8 +31,8 @@ function App() {
       {/* <Homework09 /> */}
       {/* Topic: useEffect, axios */}
       {/* <Lesson10 /> */}
-      <Homework10 />
-
+      {/* <Homework10 /> */}
+      <Lesson11 />
     </>
   );
 }
