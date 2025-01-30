@@ -15,7 +15,7 @@ import Spinner from "../../components/Spinner/Spinner";
 function Homework10() {
 
   // Задаём необходимые состояния
-    const [fetcherValue, setFetcherValue] = useState<string>("");
+  const [fetcherValue, setFetcherValue] = useState<string>("");
   const [descriptionValue, setDescriptionValue] = useState<string>("");
   const [picture, setPicture] = useState<string>("");
   const [error, setError] = useState<undefined | string>(undefined);

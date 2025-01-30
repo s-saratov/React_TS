@@ -1,10 +1,9 @@
 import styled from "@emotion/styled";
 
-export const MainButton = styled.button<{ minHeight?: string }>`
+export const MainButton = styled.button<{ minHeight?: string, isRed?: boolean}>`
   width: 100%;
-  
   min-height: ${(props) => props.minHeight || "70px"};
-  background: #1f27f5;
+  background: ${(props) => (props.isRed ? "red" : "#1f27f5")};
   outline: none;
   border: none;
   padding: 20px;
