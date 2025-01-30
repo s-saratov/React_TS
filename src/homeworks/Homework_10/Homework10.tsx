@@ -36,9 +36,9 @@ function Homework10() {
     const PICTURE_URL: string = "https://dog.ceo/api/breeds/image/random";
     setPicture("");
     setError(undefined);
+    setIsLoading(true);
 
     try {
-      setIsLoading(true);
       const result = await axios.get(PICTURE_URL);
       const data = result.data;
       setPicture(data.message);
