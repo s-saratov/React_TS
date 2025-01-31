@@ -36,3 +36,9 @@ export const Label = styled.label`
   font-weight: 400;
   font-size: 16px;
 `;
+
+export const ErrorMessage = styled.div`
+  height: 18px;
+  color: red;
+  font-size: 18px;
+`;

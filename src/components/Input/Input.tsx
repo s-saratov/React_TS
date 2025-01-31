@@ -1,4 +1,4 @@
-import { InputContainer, InputElement, Label } from "./styles";
+import { ErrorMessage, InputContainer, InputElement, Label } from "./styles";
 import { InputProps } from "./types";
 
 function Input({
@@ -9,6 +9,7 @@ function Input({
   id,
   value,
   onChange,
+  error
 }: InputProps) {
   return (
     <InputContainer>
@@ -21,6 +22,7 @@ function Input({
         value={value}
         onChange={onChange}
       />
+      <ErrorMessage>{error}</ErrorMessage>
     </InputContainer>
   );
 }
