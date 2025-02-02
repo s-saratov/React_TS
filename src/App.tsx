@@ -1,3 +1,4 @@
+import Homework12 from "homeworks/Homework_12/Homework_12";
 import GlobalStyles from "./styles/GlobalStyles";
 
 // === Lessons ===
@@ -33,7 +34,8 @@ function App() {
       {/* <Lesson10 /> */}
       {/* <Homework10 /> */}
       {/* --Topic: formik, yup */}
-      <Lesson12 />
+      {/* <Lesson12 /> */}
+      <Homework12 />
 
     </>
   );
