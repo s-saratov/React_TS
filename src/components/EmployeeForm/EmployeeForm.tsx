@@ -25,7 +25,11 @@ function EmployeeForm() {
       .typeError("Job title must be string"),
     agreeToTerms: Yup.boolean()
       .required("To proceed you must agree with the terms of use")
-      .test("Agree with the terms of use", "To proceed you must agree with the terms of use", (value) => value === true),
+      .test(
+        "Agree with the terms of use",
+        "To proceed you must agree with the terms of use",
+        (value) => value === true
+      ),
   });
 
   // Настройка формы
@@ -71,16 +75,14 @@ function EmployeeForm() {
           placeholder="Enter your job title"
           error={formik.errors.jobTitle}
         />
-
         <Input
           name="agreeToTerms"
           type="checkbox"
           label="I agree with the terms of use*"
-          value={formik.values.agreeToTerms}
+          checked={formik.values.agreeToTerms}
           onChange={formik.handleChange}
           error={formik.errors.agreeToTerms}
         />
-
       </InputsContainer>
       <Button type="submit" name="Submit" />
     </EmployeeFormContainer>
