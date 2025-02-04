@@ -15,6 +15,7 @@ import Home from "pages/Home/Home";
 import About from "pages/About/About";
 import Users from "pages/Users/Users";
 import User from "pages/Users/components/User/User";
+import Lesson14 from "lessons/Lesson_14/Lesson14";
 
 // === Homeworks ===
 // import Homework08 from "./homeworks/Homework_08/Homework08";
@@ -37,6 +38,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
           <Route path="/users/user" element={<User />} />
+          {/* Topic: useContext */}
+          <Route path="/lesson14" element={<Lesson14 />} />
         </Routes>
       </Layout>
       {/* Topic: TypeScript - Introduction */}
