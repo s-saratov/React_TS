@@ -8,9 +8,9 @@ function Clients() {
   return (
     <ClientsPage>
       <Title>Our clients</Title>
-      <Link to="Tesla">Tesla</Link>
-      <Link to="SpaceX">SpaceX</Link>
-      <Link to="XAI">xAI</Link>
+      <Link to="tesla">Tesla</Link>
+      <Link to="spacex">SpaceX</Link>
+      <Link to="xai">xAI</Link>
     </ClientsPage>
   )
 }
