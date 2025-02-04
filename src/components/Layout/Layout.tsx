@@ -44,11 +44,17 @@ function Layout({ children }: LayoutProps) {
             Users
           </StyledNavLink>
           <StyledNavLink
-            to="/lesson14"
-            style={({ isActive }) => ({
-              textDecoration: isActive ? "underline" : "none",
-            })}
-          >
+            to='/clients'
+            style={
+              ({ isActive }) => ({ textDecoration: isActive ? 'underline' : 'none' })
+            }>
+            Clients
+          </StyledNavLink>
+          <StyledNavLink
+            to='/lesson14'
+            style={
+              ({ isActive }) => ({ textDecoration: isActive ? 'underline' : 'none' })
+            }>
             Lesson 14
           </StyledNavLink>
         </NavContainer>
@@ -56,7 +62,9 @@ function Layout({ children }: LayoutProps) {
       <Main>{children}</Main>
       <Footer>
         {/* Первый способ перехода на главную страницу при клике на логотип */}
-        <LogoContainer></LogoContainer>
+        <Link to="/">
+          <LogoContainer></LogoContainer>
+        </Link>
       </Footer>
     </LayoutComponent>
   );
