@@ -27,6 +27,7 @@ import SpaceX from "pages/Clients/components/SpaceX/SpaceX";
 import XAI from "pages/Clients/components/xAI/xAI";
 
 // === Consultations ===
+import Consultation06 from "consultations/consultation_06/Consultation06";
 
 function App() {
   return (
@@ -48,8 +49,9 @@ function App() {
           <Route path="/clients/xai" element={<XAI />} />
           {/* Topic: useContext */}
           <Route path="/lesson14" element={<Lesson14 />} />
+          <Route path="/consultation06" element={<Consultation06 />} />
           {/* Route * - этот route показывает контент, когда маршрута в перечисленных выше не существует */}
-          <Route path="*" element='Page not found' />
+          <Route path="*" element="Page not found" />
         </Routes>
       </Layout>
       {/* Topic: TypeScript - Introduction */}
