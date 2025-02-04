@@ -15,15 +15,16 @@ import Home from "pages/Home/Home";
 import About from "pages/About/About";
 import Users from "pages/Users/Users";
 import User from "pages/Users/components/User/User";
-import Clients from "pages/Clients/Clients";
-import Tesla from "pages/Clients/components/Tesla/Tesla";
-import SpaceX from "pages/Clients/components/SpaceX/SpaceX";
-import XAI from "pages/Clients/components/xAI/xAI";
+import Lesson14 from "lessons/Lesson_14/Lesson14";
 
 // === Homeworks ===
 // import Homework08 from "./homeworks/Homework_08/Homework08";
 // import Homework09 from "./homeworks/Homework_09/Homework09";
 // import Homework10 from "./homeworks/Homework_10/Homework10";
+import Clients from "pages/Clients/Clients";
+import Tesla from "pages/Clients/components/Tesla/Tesla";
+import SpaceX from "pages/Clients/components/SpaceX/SpaceX";
+import XAI from "pages/Clients/components/xAI/xAI";
 
 // === Consultations ===
 
@@ -45,6 +46,8 @@ function App() {
           <Route path="/clients/tesla" element={<Tesla />} />
           <Route path="/clients/spacex" element={<SpaceX />} />
           <Route path="/clients/xai" element={<XAI />} />
+          {/* Topic: useContext */}
+          <Route path="/lesson14" element={<Lesson14 />} />
           {/* Route * - этот route показывает контент, когда маршрута в перечисленных выше не существует */}
           <Route path="*" element='Page not found' />
         </Routes>
