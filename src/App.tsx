@@ -45,6 +45,8 @@ function App() {
           <Route path="/clients/tesla" element={<Tesla />} />
           <Route path="/clients/spacex" element={<SpaceX />} />
           <Route path="/clients/xai" element={<XAI />} />
+          {/* Route * - этот route показывает контент, когда маршрута в перечисленных выше не существует */}
+          <Route path="*" element='Page not found' />
         </Routes>
       </Layout>
       {/* Topic: TypeScript - Introduction */}
