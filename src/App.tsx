@@ -15,6 +15,10 @@ import Home from "pages/Home/Home";
 import About from "pages/About/About";
 import Users from "pages/Users/Users";
 import User from "pages/Users/components/User/User";
+import Clients from "pages/Clients/Clients";
+import Tesla from "pages/Clients/components/Tesla/Tesla";
+import SpaceX from "pages/Clients/components/SpaceX/SpaceX";
+import XAI from "pages/Clients/components/xAI/xAI";
 
 // === Homeworks ===
 // import Homework08 from "./homeworks/Homework_08/Homework08";
@@ -37,6 +41,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/users" element={<Users />} />
           <Route path="/users/user" element={<User />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/tesla" element={<Tesla />} />
+          <Route path="/clients/spacex" element={<SpaceX />} />
+          <Route path="/clients/xai" element={<XAI />} />
         </Routes>
       </Layout>
       {/* Topic: TypeScript - Introduction */}
