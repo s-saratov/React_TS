@@ -12,6 +12,7 @@ import {
   DeleteButtonWrapper,
   Lesson11Wrapper,
 } from "./styles";
+import { CatFact } from "./styles";
 
 function Lesson11() {
   // Задаём необходимые состояния

@@ -9,7 +9,7 @@ import { MainButton } from "./styles";
 
 function Button({ name = "SEND", type = 'button', isDisabled = false, isRed = false, onClick, minHeight }: ButtonProps) {
   return (
-    <MainButton type={type} disabled={isDisabled} isRed={isRed} onClick={onClick} minHeight={minHeight}>
+    <MainButton type={type} disabled={isDisabled} $isRed={isRed} onClick={onClick} minHeight={minHeight}>
       {name}
     </MainButton>
   );
