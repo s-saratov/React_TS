@@ -25,6 +25,7 @@ import Clients from "pages/Clients/Clients";
 import Tesla from "pages/Clients/components/Tesla/Tesla";
 import SpaceX from "pages/Clients/components/SpaceX/SpaceX";
 import XAI from "pages/Clients/components/xAI/xAI";
+import Homework14 from "homeworks/Homework_14/components/BlogManagement/BlogManagment";
 
 // === Consultations ===
 import Consultation06 from "consultations/consultation_06/Consultation06";
@@ -50,6 +51,7 @@ function App() {
           {/* Topic: useContext */}
           <Route path="/lesson14" element={<Lesson14 />} />
           <Route path="/consultation06" element={<Consultation06 />} />
+          <Route path="/homework14" element={<Homework14 />} />
           {/* Route * - этот route показывает контент, когда маршрута в перечисленных выше не существует */}
           <Route path="*" element="Page not found" />
         </Routes>
