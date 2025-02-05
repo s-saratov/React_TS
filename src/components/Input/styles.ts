@@ -1,5 +1,9 @@
 import styled from "@emotion/styled";
 
+interface InputStyledProps {
+  type: "email" | "number" | "password" | "tel" | "text" | "url" | "checkbox";
+}
+
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,11 +13,11 @@ export const InputContainer = styled.div`
   width: 100%;
 `;
 
-export const InputElement = styled.input`
-  padding: 12px;
+export const InputElement = styled.input<InputStyledProps>`
+  padding: ${({ type }) => (type === "checkbox" ? "0px" : "12px")};
   gap: 10px;
-  width: 100%;
-  height: 50px;
+  width: ${({ type }) => (type === "checkbox" ? "auto" : "100%")};
+  height: ${({ type }) => (type === "checkbox" ? "auto" : "50px")};
   background: #ffffff;
   border: 1px solid #3f3f3f;
   border-radius: 4px;
@@ -23,7 +27,7 @@ export const InputElement = styled.input`
   font-weight: 400;
   font-size: 16px;
 
-  &:placeholder {
+  &::placeholder {
     opacity: 40%;
   }
 `;

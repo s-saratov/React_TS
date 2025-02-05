@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import GlobalStyles from "./styles/GlobalStyles";
 
 // === Lessons ===
@@ -21,6 +20,7 @@ import Lesson14 from "lessons/Lesson_14/Lesson14";
 // import Homework08 from "./homeworks/Homework_08/Homework08";
 // import Homework09 from "./homeworks/Homework_09/Homework09";
 // import Homework10 from "./homeworks/Homework_10/Homework10";
+// import Homework12 from "homeworks/Homework_12/Homework_12";
 import Clients from "pages/Clients/Clients";
 import Tesla from "pages/Clients/components/Tesla/Tesla";
 import SpaceX from "pages/Clients/components/SpaceX/SpaceX";
@@ -67,6 +67,7 @@ function App() {
       {/* Topic: useEffect, axios */}
       {/* <Lesson10 /> */}
       {/* <Homework10 /> */}
+      {/* <Homework12 /> */}
       {/* --Topic: formik, yup */}
       {/* <Lesson12 /> */}
     </BrowserRouter>

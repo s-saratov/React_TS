@@ -9,7 +9,8 @@ function Input({
   id,
   value,
   onChange,
-  error
+  error,
+  checked
 }: InputProps) {
   return (
     <InputContainer>
@@ -21,6 +22,7 @@ function Input({
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        checked={checked}
       />
       <ErrorMessage>{error}</ErrorMessage>
     </InputContainer>
