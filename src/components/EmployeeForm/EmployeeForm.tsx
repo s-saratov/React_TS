@@ -17,9 +17,9 @@ function EmployeeForm() {
       .typeError("Name must be string"),
     age: Yup.number()
       .required("Field age is required")
-      .typeError("Age must be number")
-      .test("Check min age", "Min 18 y.o.", (value) => value >= 18)
-      .test("Check max age", "Max 80 y.o.", (value) => value <= 80),
+      .min(18, "Min 18 y.o.")
+      .max(80, "Max 80 y.o.")
+      .typeError("Age must be number"),
     jobTitle: Yup.string()
       .max(30, "Max length is 30 symbols")
       .typeError("Job title must be string"),
